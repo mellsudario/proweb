@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Cadastro na MoxieWear</title>
+    <link href="stylesheets/cadastro.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header class="top-bar">
+        <div class="logo">
+            <img src="/images/logo.png" alt="Logo da Loja">
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <img src="/images/logo.png" alt="Logo da MoxieWear">
+            <p>Seja bem-vindo! <br> Crie sua conta</p>
+        </div>
+        <div class="content">
+            <h1>Crie sua conta</h1>
+            <div class="container">
+              <div class="form">
+                  <form action="/create" method="post">
+                <div class="form-group">
+                    <label for="username">Nome:</label>
+                    <input type="text" id="username" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="senha" required>
+                </div>
+                <button type="submit">Cadastrar</button>
+            </form>
+            <p class="centered-text">Já tem um cadastro? <a class="login-link" href="views/login">Faça login!</a></p>
+        </div>
+    </div>
+  <%- include('./partials/footer') %>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Login na MoxieWear</title>
+    <link href="stylesheets/cadastro.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header class="top-bar">
+        <div class="logo">
+            <img src="/images/logo.png" alt="Logo da Loja">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <img src="/images/logo.png" alt="Logo da MoxieWear">
+            <p>Seja bem vindo de volta!</p>
+        </div>
+        <div class="content">
+            <h1>Sua conta</h1>
+           <div class="form">
+             <form action="/autenticar" method="post">
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="senha" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <p class="centered-text">Ainda não tem uma conta? <a class="signup-link" href="cadastro">Cadastre-se!</a></p>
+        </div>
+    </div>
+<%- include('./partials/footer') %>
